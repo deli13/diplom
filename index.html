@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="/bower_components/vue/dist/vue.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</head>
+<body>
+<div class="container" id="app">
+    <button class="btn btn-dark" v-on:click="click_button(1000)">Заполнить на 1000 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(500)">Заполнить на 500 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(100)">Заполнить на 100 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(50)">Заполнить на 50 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(10)">Заполнить на 10 элементов</button>
+    <table class="table">
+        <thead>
+        <th>id</th>
+        <th>text</th>
+        </thead>
+        <tbody>
+        <tr v-for="i in col">
+            <td>{{i}}</td>
+            <td>text</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

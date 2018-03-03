@@ -1,0 +1,22 @@
+{
+  "name": "diplom",
+  "description": "vuejs vs jquery",
+  "main": "index.js",
+  "authors": [
+    "deli13 <death13life@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/deli13/diplom",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "vue": "^2.5.13"
+  }
+}
