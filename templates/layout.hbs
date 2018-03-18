@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="/" class="navbar-brand">Home</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/vuetest" class="nav-link">Vue</a></li>
+            <li class="nav-item"><a href="/jquerytest" class="nav-link">jQuery</a></li>
+            <li class="nav-item"><a href="/purejs" class="nav-link">PureJS</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container" id="app">
+    <h2>{{title}}</h2>
+    {{{body}}}
+</div>
+
+</body>
+{{#if VueRoute}}
+<script defer src="/bower_components/vue/dist/vue.js"></script>
+<script defer src="/static/app-vue.js"></script>
+{{/if}}
+</html>

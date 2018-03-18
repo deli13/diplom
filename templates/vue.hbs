@@ -1,0 +1,21 @@
+<div class="btn-group">
+    <button class="btn btn-dark" v-on:click="click_button(1000)">Заполнить на 1000 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(500)">Заполнить на 500 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(100)">Заполнить на 100 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(50)">Заполнить на 50 элементов</button>
+    <button class="btn btn-dark" v-on:click="click_button(10)">Заполнить на 10 элементов</button>
+</div>
+<table class="table">
+    <thead>
+    <th>id</th>
+    <th>text</th>
+    </thead>
+    <tbody>
+    <tr v-for="i in col">
+        <td>\{{i}}</td>
+        <td><input type="text" v-model="text" class="form-control"/></td>
+    </tr>
+    </tbody>
+</table>
+
+
