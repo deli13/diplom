@@ -1,21 +1,31 @@
-<div class="btn-group">
-    <button class="btn btn-dark" data-col="1000">Заполнить на 1000 элементов</button>
-    <button class="btn btn-dark" data-col="500">Заполнить на 500 элементов</button>
-    <button class="btn btn-dark" data-col="100">Заполнить на 100 элементов</button>
-    <button class="btn btn-dark" data-col="50">Заполнить на 50 элементов</button>
-    <button class="btn btn-dark" data-col="10">Заполнить на 10 элементов</button>
+<div class="row">
+    <div class="col-4">
+        <div class="btn-group btn-group-vertical">
+            <button class="btn btn-dark" data-col="10000">Заполнить на 10000 элементов</button>
+            <button class="btn btn-dark" data-col="5000">Заполнить на 5000 элементов</button>
+            <button class="btn btn-dark" data-col="1000">Заполнить на 1000 элементов</button>
+            <button class="btn btn-dark" data-col="500">Заполнить на 500 элементов</button>
+            <button class="btn btn-dark" data-col="100">Заполнить на 100 элементов</button>
+            <button class="btn btn-dark" data-col="50">Заполнить на 50 элементов</button>
+            <button class="btn btn-dark" data-col="10">Заполнить на 10 элементов</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <table class="table">
+            <thead>
+            <th>id</th>
+            <th>text</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><input type="text" name="text" class="form-control" value="text"/></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-<table class="table">
-    <thead>
-    <th>id</th>
-    <th>text</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>1</td>
-        <td><input type="text" name="text" class="form-control" value="text"/></td>
-    </tr>
-    </tbody>
-</table>
+
+
 
 <script src="/static/app-pure.js"></script>

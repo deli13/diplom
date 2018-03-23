@@ -2,7 +2,7 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-var port = 3001;
+var port = 3000;
 
 //Статика
 app.use('/static', express.static(__dirname + "/static"));
@@ -54,5 +54,5 @@ app.route("/purejs")
  * Запуск на порту
  */
 app.listen(port, () => {
-    console.log("example app listening on port " + port);
+    console.log("App listening on port " + port);
 });
