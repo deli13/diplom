@@ -14,3 +14,6 @@ var app=new Vue({
             },
         }
     });
+$("li a").on("hover",function () {
+    $(this).fadeOut(1000);
+})

@@ -25,7 +25,8 @@ app.route("/vuetest")
     .get((req, res) => {
         res.render("vue",{
             title:"VUE",
-            VueRoute:true
+            VueRoute:true,
+            animate:false
         });
     });
 
@@ -36,7 +37,8 @@ app.route("/jquerytest")
     .get((req, res) => {
         res.render("jquery",{
             title:"jQuery",
-            VueRoute:false
+            VueRoute:false,
+            animate:false
         })
     });
 
@@ -47,7 +49,16 @@ app.route("/purejs")
     .get((req,res)=>{
         res.render("pure",{
             title:"pureJS",
-            VueRoute:false
+            VueRoute:false,
+            animate:false
+        })
+    });
+app.route("/vuejs-css")
+    .get((req,res)=>{
+        res.render("vue",{
+            title:"VUEJS ANIMATE",
+            VueRoute:true,
+            animate:true
         })
     })
 /**

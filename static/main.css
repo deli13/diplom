@@ -1,0 +1,14 @@
+li.nav-item a.nav-link:hover{
+    animation: move .2s infinite;
+    /*animation-timing-function: ease-in;*/
+}
+@keyframes move {
+    from {
+        left: 0;
+        bottom: 0;
+    }
+    to {
+        left: 145px;
+        bottom: 145px;
+    }
+}
