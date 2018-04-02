@@ -1,14 +1,30 @@
-li.nav-item a.nav-link:hover{
-    animation: move .2s infinite;
-    /*animation-timing-function: ease-in;*/
+/**
+    css3 animation from
+ */
+.table tr{
+    animation: move .8s ease-in;
 }
 @keyframes move {
     from {
-        left: 0;
-        bottom: 0;
+        opacity: 0;
+        transform: scale(0,0);
     }
     to {
-        left: 145px;
-        bottom: 145px;
+        opacity: 1;
+        transform: scale(1,1);
     }
+}
+.table tr.delete{
+    animation: delete 1s ease-out;
+}
+@keyframes delete {
+    from{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    to{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+
 }

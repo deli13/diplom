@@ -17,7 +17,7 @@
             <th>text</th>
             </thead>
             <tbody>
-            <tr v-for="i in col">
+            <tr v-for="i in col" v-bind:class="{delete:isDelete}">
                 <td>\{{i}}</td>
                 <td><input type="text" v-model="text" class="form-control"/></td>
             </tr>

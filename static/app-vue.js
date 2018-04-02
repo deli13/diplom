@@ -6,14 +6,17 @@ var app=new Vue({
         el:"#app",
         data:{
             col:1,
-            text:"text"
+            text:"text",
+            isDelete:false
         },
         methods:{
             click_button:function (dat) {
-                this.col=dat;
+                this.isDelete=true;
+                var self=this;
+                setTimeout(function () {
+                    self.isDelete=false;
+                    self.col=dat;
+                },1000);
             },
         }
     });
-$("li a").on("hover",function () {
-    $(this).fadeOut(1000);
-})
