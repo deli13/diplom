@@ -4,11 +4,15 @@
  * @returns {string}
  */
 function appendString(count){
-    var str="";
-    for (var i=1; i<=count;i++){
-        str=str+"<tr><td>"+i+"</td><td><input type=\"text\" name=\"text\" class=\"form-control\" value=\"text\"/></td></tr>";
-    }
-    return $(str);
+    var $tr=$("<tr></tr>");
+    var $td1=$("<td></td>");
+    $td1.text(count);
+    var $input=$("<input class='form-control' name='text' value='text'/>");
+    $td2=$("<td></td>");
+    $tr.append($td1);
+    $tr.append($td2);
+    $td2.append($input);
+    return $tr;
 }
 var $table=$("#app table tbody");
 /**
@@ -17,7 +21,10 @@ var $table=$("#app table tbody");
 $("button[data-col]").on("click",function () {
     var data=$(this).data("col");
     $table.empty();
-    $table.append(appendString(data));
+    for (var k=1; k<=data;k++){
+        $table.append(appendString(k));
+    }
+    // $table.append(appendString(data));
 })
 $("body").on("input","input[name=text]",function () {
     var $edit=$(this).val();;

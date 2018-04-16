@@ -15,7 +15,10 @@
     }
 }
 .table tr.delete{
-    animation: delete 1s ease-out;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    /*animation: delete 1s ease-out;*/
 }
 @keyframes delete {
     from{

@@ -11,12 +11,22 @@ var app=new Vue({
         },
         methods:{
             click_button:function (dat) {
-                this.isDelete=true;
+
                 var self=this;
-                setTimeout(function () {
-                    self.isDelete=false;
+                /**
+                 * Проверка на включенный режим анимации на CSS
+                 */
+                var data_animate=document.querySelector("meta[name=animate]");
+                if(data_animate!=undefined){
+                    this.isDelete=true;
+                    setTimeout(function () {
+                        self.isDelete=false;
+                        self.col=dat;
+                    },1000);
+                } else {
+                    // self.isDelete=false;
                     self.col=dat;
-                },1000);
+                }
             },
         }
     });
